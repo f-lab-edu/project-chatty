@@ -25,18 +25,16 @@ make run
 
 환경 변수를 지정하여 구성 값을 조정할 수 있습니다.
 
-| Name | Description             | Default                  |
-| --- |-------------------------|--------------------------|
-| `WEB_HOST` | Web server host         | `0.0.0.0`                |
-| `WEB_PORT` | Web server port         | `8000`                   |
-| `DATABASE_URL` | Database SQLAlchemy URL | `sqlite:///./db.sqlite3` |
-| `DATABASE_ECHO` | Database echo flag      | `True`
-|
-| `CORS_ORIGINS` | CORS origins            | `*`                      |
-| `CORS_CREDENTIALS` | CORS credentials flag   | `True`
-   |
-| `CORS_METHODS` | CORS methods            | `*`                      |
-| `CORS_HEADERS` | CORS headers            | `*`                      |
+| Name             | Description               | Default                      |
+|------------------|---------------------------|------------------------------|
+| `WEB_HOST`       | Web server host           | `0.0.0.0`                    |
+| `WEB_PORT`       | Web server port           | `8000`                       |
+| `DATABASE_URL`   | Database SQLAlchemy URL   | `sqlite:///./db.sqlite3`     |
+| `DATABASE_ECHO`  | Database echo flag        | `True`                       |
+| `CORS_ORIGINS`   | CORS origins              | `*`                          |
+| `CORS_CREDENTIALS` | CORS credentials flag   | `True`                       |
+| `CORS_METHODS`   | CORS methods              | `*`                          |
+| `CORS_HEADERS`   | CORS headers              | `*`                          |
 
 앱은 `.env` 파일 또한 지원합니다.
 다음처럼 프로젝트 최상단 경로에 `.env` 파일을 작성하여 필요한 환경 변수를 로드할 수 있습니다.
